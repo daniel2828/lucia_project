@@ -3,7 +3,7 @@ const app = express()
 require('./db')
 
 app.get('/', (req, res) => {
-    res.send('SERVIDOR CHARO')
+    res.send('SERVIDOR CHAyyyyyRO')
 })
 
 
