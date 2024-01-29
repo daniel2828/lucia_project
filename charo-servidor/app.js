@@ -1,9 +1,14 @@
 const express = require('express')
+require('dotenv').config()
+const UserModel = require('./models/Users')
 const app = express()
 require('./db')
 
+
+
 app.get('/', (req, res) => {
-    res.send('SERVIDOR CHAyyyyyRO')
+    res.send('SERVIDOR CHARO')
+    UserModel.create({userName: "Daniel"})
 })
 
 

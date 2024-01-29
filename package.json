@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "front": "cd ./charoCliente && npm start",
+        "back": "cd ./charo-servidor && npm run dev"
+    }
+}
