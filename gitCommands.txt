@@ -1,0 +1,24 @@
+// COMANDOS LOCALES
+git add . 
+git add "nombre del fichero"
+git commit -m "Mensaje del commit"  => Para subir los cambios al repositorio LOCAL
+git log => Ver los cambios
+
+git checkout Tu-rama 
+git checkout -b Tu-rama-nueva (Creas una rama copia de la que estas)
+
+Cambios detectados =>   Stage    => Commiteados
+    Fase 1              Fase 2      Fase 3 (Repo actualizado)
+// COMANDOS REMOTOS
+git push origin 1-crear-el-fe => ggpush    => Actualizas el repo remoto (Github)
+
+En el repo remoto  (desde github)
+main            1-crear-el-fe (Cambios)
+                  Pull Request (Comparar la rama origen con la rama destino)
+
+Despues del PR main estaria actualizado (en el repo remoto).
+
+Desde local tendrias que hacer:
+git checkout main
+git pull origin main => ggpull
+

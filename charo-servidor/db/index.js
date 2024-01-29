@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 
 const MONGO_URI =
-    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/charo-server'   //porque esa url y no esta : mongodb://localhost:27017
+    process.env.MONGODB_URI
+ //porque esa url y no esta : mongodb://localhost:27017
 
 mongoose
     .connect(MONGO_URI)
