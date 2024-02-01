@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 
 const MONGO_URI =
     process.env.MONGODB_URI
- //porque esa url y no esta : mongodb://localhost:27017
 
 mongoose
     .connect(MONGO_URI)
@@ -15,5 +14,3 @@ mongoose
     })
 
 
-
-// todo parece ok pero no me crea la coleccion en mongodb
