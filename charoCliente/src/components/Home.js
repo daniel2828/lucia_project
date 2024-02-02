@@ -1,10 +1,15 @@
 import React from 'react'
-import { Obras } from './Obras'
+import { AllPictures } from './AllPictures'
+
+import { Container } from 'react-bootstrap'
 
 export const Home = () => {
   return (
     <div>
-      <Obras />
+      <Container>
+        <h1>Todos los cuadros disponibles</h1>
+        <AllPictures />
+      </Container>
     </div>
   )
 }

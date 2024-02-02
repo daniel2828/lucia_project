@@ -2,5 +2,8 @@
     "scripts": {
         "front": "cd ./charoCliente && npm start",
         "back": "cd ./charo-servidor && npm run dev"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.1"
     }
 }

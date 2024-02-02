@@ -1,10 +1,17 @@
 require('dotenv').config()
 require('./db')
-const picRoutes = require('./routes/pictureRoutes')
+const cors = require('cors')
 const express = require('express')
 
 
 const app = express()
+
+app.use(cors({
+    origin: 'http://localhost:3000', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  }))
+
 app.use(express.json())
 
  require('./routes')(app)
